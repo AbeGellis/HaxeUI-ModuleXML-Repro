@@ -4,7 +4,6 @@ import kha.Framebuffer;
 
 import haxe.ui.Toolkit;
 import haxe.ui.core.Screen;
-import view.FooView;
 
 class Main {
 	public static function main() {
@@ -13,9 +12,11 @@ class Main {
 				Toolkit.init();
 
 				final screen = Screen.instance;
-				final foo = new FooView();
+				final bar = new BarView();
+				final foo = bar.foo;
+				trace(foo == null);
 
-				screen.addComponent(foo);
+				screen.addComponent(bar);
 
 				kha.System.notifyOnFrames(function( framebuffers: Array<kha.Framebuffer> ) {
 					final fb = framebuffers[0];

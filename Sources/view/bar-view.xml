@@ -1,0 +1,17 @@
+<hbox>
+    <hbox>
+        <button text="Normal" />
+        <button text="Toggle" toggle="true" selected="true" />
+        <button text="Repeater" repeater="true" />
+        <button text="Disabled" disabled="true" />
+    </hbox>    
+    <grid columns="2">
+        <button text="Left" icon="haxeui-core/styles/default/haxeui_small.png" />
+        <button text="Right" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="right" />
+        <button text="Top" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="top" width="100%" />
+        <button text="Bottom" icon="haxeui-core/styles/default/haxeui_small.png" iconPosition="bottom" width="100%" />
+    </grid>
+    <button text="Disabled"  icon="haxeui-core/styles/default/haxeui_small.png" disabled="true" />
+    
+    <fooview id="foo" />
+</hbox>
